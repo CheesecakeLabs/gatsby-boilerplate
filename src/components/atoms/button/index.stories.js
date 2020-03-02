@@ -8,8 +8,5 @@ import Button from './index'
 storiesOf('Atoms', module).add('Button', () => {
   const children = text('Content', 'Click me')
 
-  return (
-    /* eslint-disable-next-line react/jsx-props-no-spreading */
-    <Button {...actions('onClick')}>{children}</Button>
-  )
+  return <Button {...actions('onClick')}>{children}</Button>
 })
