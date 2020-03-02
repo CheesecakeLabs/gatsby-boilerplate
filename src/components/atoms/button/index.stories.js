@@ -1,15 +1,15 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { text } from '@storybook/addon-knobs'
+import { actions } from '@storybook/addon-actions'
 
 import Button from './index'
 
-export default { title: 'Button' }
+storiesOf('Atoms', module).add('Button', () => {
+  const children = text('Content', 'Click me')
 
-export const withText = () => <Button>Hello Button</Button>
-
-export const withEmoji = () => (
-  <Button>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
-)
+  return (
+    /* eslint-disable-next-line react/jsx-props-no-spreading */
+    <Button {...actions('onClick')}>{children}</Button>
+  )
+})
