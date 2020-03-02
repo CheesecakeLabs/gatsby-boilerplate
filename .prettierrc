@@ -7,5 +7,14 @@
   "arrowParens": "avoid",
   "jsxBracketSameLine": false,
   "semi": false,
-  "parser": "babel"
+  "parser": "babel",
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "singleQuote": false,
+        "parser": "css"
+      }
+    }
+  ]
 }
