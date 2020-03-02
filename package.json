@@ -21,6 +21,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.4",
     "eslint": "^6.8.0",
     "eslint-config-cheesecakelabs": "^4.0.2",
     "eslint-import-resolver-webpack": "^0.12.1",
@@ -29,6 +30,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
+    "postcss-color-function": "^4.1.0",
+    "postcss-css-variables": "^0.14.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
