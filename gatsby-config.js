@@ -1,4 +1,5 @@
 const resolveOptions = require('./gatsby.resolve')
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
